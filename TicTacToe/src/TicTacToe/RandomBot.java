@@ -8,7 +8,7 @@ public class RandomBot implements Player {
 	@Override
 	public int move(String[][] gameBoard, List<Integer> moves, String symbol) {
 		int randomPos = (int) (Math.random() * 9);
-		while (!(moves.contains(randomPos))) {
+		while (moves.contains(randomPos)) {
 			randomPos = (int) (Math.random() * 9);
 		}
 		gameBoard[moveParser(randomPos)[0]][moveParser(randomPos)[1]] = symbol;	

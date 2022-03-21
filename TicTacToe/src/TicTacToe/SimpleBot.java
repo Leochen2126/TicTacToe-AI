@@ -10,6 +10,7 @@ public class SimpleBot implements Player {
 	public int move(String[][] gameBoard, List<Integer> moves, String symbol) {
 		int i ;
 		for(i=0; i<9;i++) {
+			
 			if (!(moves.contains(i))) {
 				gameBoard[moveParser(i)[0]][moveParser(i)[1]] = symbol;
 				break;

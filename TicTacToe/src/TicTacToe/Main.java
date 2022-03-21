@@ -1,11 +1,13 @@
 package TicTacToe;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 	
 	public static void main(String args[]) {
 		 testGame3();
 	}
-	
 	public static void testGame() {
 		Player player1 =new ManualPlayer("p1");
 		Player player2 =new ManualPlayer("p2");
