@@ -1,6 +1,10 @@
 package TicTacToe;
 import java.util.*; 
-//@author Leo Chen
+
+/*
+ * class for the tic tac toe game
+ * @author Leo
+ */
 
 public class Game {
 	private int moveNumber;

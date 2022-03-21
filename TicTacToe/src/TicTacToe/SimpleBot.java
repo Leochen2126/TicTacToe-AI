@@ -1,7 +1,11 @@
 package TicTacToe;
-
 import java.util.List;
 
+/*
+ * class implementing player interface for that executes the first available move
+ * 
+ * @author Leo
+ */
 
 public class SimpleBot implements Player {
 

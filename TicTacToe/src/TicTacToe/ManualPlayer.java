@@ -1,6 +1,12 @@
 package TicTacToe;
 import java.util.*; 
 
+/*
+ * class implementing player interface for manual console tiktaktoe playing
+ * 
+ * @author Leo
+ */
+
 public class ManualPlayer implements Player {
 	
 	public String name;

@@ -1,6 +1,11 @@
 package TicTacToe;
-
 import java.util.List;
+
+/*
+ * class implementing player interface for random moves
+ * 
+ * @author Leo
+ */
 
 public class RandomBot implements Player {
 

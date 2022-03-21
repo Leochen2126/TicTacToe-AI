@@ -2,6 +2,10 @@ package TicTacToe;
 
 import java.util.ArrayList;
 import java.util.List;
+/*
+ * main/client class
+ * @author Leo
+ */
 
 public class Main {
 	
