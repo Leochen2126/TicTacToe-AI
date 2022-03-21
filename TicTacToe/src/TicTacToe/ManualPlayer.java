@@ -2,15 +2,27 @@ package TicTacToe;
 import java.util.*; 
 
 public class ManualPlayer implements Player {
+	
+	public String name;
+	
+	public ManualPlayer(String aName) {
+		name = aName;
+	}
 
 	@Override
-	public void move(String[][] gameBoard, String symbol) {
+	public int move(String[][] gameBoard,List<Integer> moves, String symbol) {
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Choose a move");
 		String input = sc.nextLine();
+		if (gameBoard[moveParser(input)[0]][moveParser(input)[1]]== "X" || gameBoard[moveParser(input)[0]][moveParser(input)[1]]== "O")
+		{
+			System.out.println("impossible move");
+			move(gameBoard, moves, symbol);
+			return Integer.parseInt(input);
+		}
 		gameBoard[moveParser(input)[0]][moveParser(input)[1]] = symbol;	
+		return Integer.parseInt(input);
 		
-		sc.close();
 	}
 	
 	/*
@@ -24,5 +36,11 @@ public class ManualPlayer implements Player {
 		int[] output = {row,col};
 		return output;
 	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	
 
 }

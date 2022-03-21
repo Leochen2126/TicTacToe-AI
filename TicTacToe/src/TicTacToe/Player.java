@@ -1,8 +1,10 @@
 package TicTacToe;
+import java.util.*; 
 
 public interface Player {
 	
-	public void move(String[][] gameBoard, String symbol);
+	public int move(String[][] gameBoard, List<Integer> moves, String symbol);
+	public String getName();
 	
 
 }
