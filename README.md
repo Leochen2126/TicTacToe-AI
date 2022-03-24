@@ -1,2 +1,2 @@
 # TicTacToe-AI
-AI tic-tac-toe player
+AI tic-tac-toe player 
